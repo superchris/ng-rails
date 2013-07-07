@@ -51,7 +51,7 @@ module Ng
 
       def load_application
         create_file "#{angular_path}/#{application_name}.js"
-        inject_into_file "#{angular_path}/#{application_name}.js", "//= require ./#{application_name}/index"
+        append_file "#{angular_path}/#{application_name}.js", "//= require ./#{application_name}/index"
         gsub_file "#{angular_path}/application.js", '//= require_tree .', '//= require_self'
       end
 
