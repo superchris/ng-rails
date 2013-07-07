@@ -86,8 +86,8 @@ class BootstrapGeneratorTest < Rails::Generators::TestCase
       assert_directory "#{path}/#{application_name}/#{dir}"
       assert_file "#{path}/#{application_name}/#{dir}/.keep" unless options[:skip_git]
     end
-    assert_directory "#{path}/templates"
-    assert_file "#{path}/templates/.keep" unless options[:skip_git]
+    assert_directory "app/assets/templates"
+    assert_file "app/assets/templates/.keep" unless options[:skip_git]
   end
 
   def application_name
