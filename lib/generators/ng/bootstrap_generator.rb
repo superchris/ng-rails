@@ -18,8 +18,8 @@ module Ng
           empty_directory "#{application_path}/#{dir}"
           create_file "#{application_path}/#{dir}/.keep" unless options[:skip_git]
         end
-        empty_directory "#{angular_path}/templates"
-        create_file "#{angular_path}/templates/.keep" unless options[:skip_git]
+        empty_directory "app/assets/templates"
+        create_file "app/assets/templates/.keep" unless options[:skip_git]
       end
 
       def create_app_file
