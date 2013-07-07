@@ -58,11 +58,11 @@ module Ng
       def inject_layout
         if defined?(Haml)
           inject_into_file("app/views/layouts/application.html.haml", before: '= csrf_meta_tags') do
-            "= javascript_include_tag '#{application_name}'"
+            "   = javascript_include_tag '#{application_name}'\n"
           end
         else 
           inject_into_file("app/views/layouts/application.html.erb", before: '<%= csrf_meta_tags %>') do
-            "<%= javascript_include_tag '#{application_name}' %>"
+            "   <%= javascript_include_tag '#{application_name}' %>\n"
           end
         end
       end
