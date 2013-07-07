@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ng-rails (0.0.1)
+    ng-rails (0.0.2)
       rails (~> 4.0.0)
 
 GEM
