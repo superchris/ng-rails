@@ -56,13 +56,13 @@ module Ng
       end
 
       def inject_layout
-        if template_extension == 'erb'
-          inject_into_file("app/views/layouts/application.html.erb", after: '<%= javascript_include_tag "application", "data-turbolinks-track" => true %>\\n') do
-            "<%= javascript_include_tag '#{application_name}' %>"
+        if defined?(Haml)
+          inject_into_file("app/views/layouts/application.html.haml", before: '= csrf_meta_tags') do
+            "= javascript_include_tag '#{application_name}'\n"
           end
-        elsif template_extension == 'haml'
-          inject_into_file("app/views/layouts/application.html.haml", after: '= javascript_include_tag "application", "data-turbolinks-track" => true\\n') do
-            "= javascript_include_tag '#{application_name}'"
+        else 
+          inject_into_file("app/views/layouts/application.html.erb", before: '<%= csrf_meta_tags %>') do
+            "<%= javascript_include_tag '#{application_name}' %>\n"
           end
         end
       end
