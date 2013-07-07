@@ -62,6 +62,8 @@ $ rails generate ng:bootstrap -u
 
 Once ng-rails is *'complete'*  the version number will be made to mimic that of the latest stable build of AngularJS.
 
+Please keep in mind that this is the best configuration that I have found for running an AngularJS app from sprockets/rails. It is a tried and true method with a couple of production apps running this way. If you find a better way of setting something up, please contribute following the guidelines below.
+
 ## Contributing
 
 1. Fork the project.
