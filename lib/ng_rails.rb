@@ -1,5 +1,7 @@
 require 'ng/rails/version'
 require 'ng/rails/engine'
 
-module NgRails
+module Ng
+  module Rails
+  end
 end
