@@ -54,9 +54,6 @@ module Ng
 
       def create_root_index_file
         template "root/index.js", "#{application_path}/index.js"
-        inject_into_file("#{application_path}/index.js", before: "//= require_tree ./resources") do
-          "//= require ./#{application_name}/index\n"
-        end
       end
 
       def load_application
