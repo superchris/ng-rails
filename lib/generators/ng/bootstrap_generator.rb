@@ -106,11 +106,11 @@ module Ng
       def use_vendor_assets
         if options[:unstable]
           inject_into_file("#{angular_path}/application.js", before: "//= require_tree .") do
-            "\n//= require angular-unstable.min\n//= require angular-resource-unstable.min\n"
+            "//= require angular-unstable.min\n//= require angular-resource-unstable.min\n"
           end
         else
           inject_into_file("#{angular_path}/application.js", before: "//= require_tree .") do
-            "\n//= require angular.min\n//= require angular-resource.min\n"
+            "//= require angular.min\n//= require angular-resource.min\n"
           end
         end
       end
