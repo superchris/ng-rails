@@ -80,6 +80,12 @@ module Ng
         end
       end
 
+      def compile_js_file
+        inject_into_file("config/environments/production.rb", before: "  config.cache_classes = true") do
+          "  config.assets.precompile += %w( #{application_name}.js )\n"
+        end
+      end
+
       private
 
       def inject_angular_cdn
