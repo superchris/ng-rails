@@ -60,7 +60,7 @@ $ rails generate ng:bootstrap -u
 
 ## Notes
 
-Once ng-rails is *'complete'* the version number will be made to mimic that of the latest stable build of AngularJS.
+Once ng-rails is *'complete'*  the version number will be made to mimic that of the latest stable build of AngularJS.
 
 ## Contributing
 
