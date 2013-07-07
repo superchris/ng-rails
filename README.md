@@ -1,5 +1,5 @@
 # ng-rails
-[![Build Status](https://travis-ci.org/janders223/ng-rails.png?branch=master)](https://travis-ci.org/janders223/ng-rails)
+[![Build Status](https://travis-ci.org/janders223/ng-rails.png)](https://travis-ci.org/janders223/ng-rails)
 TODO: Write a gem description
 
 ## Installation
