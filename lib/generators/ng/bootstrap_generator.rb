@@ -51,17 +51,17 @@ module Ng
 
       def load_application
         create_file "#{angular_path}/#{application_name}.js"
-        gsub_file "#{angular_path}/#{application_name}.js", "//= replace", "//= require ./#{application_name}/index"
+        inject_into_file "#{angular_path}/#{application_name}.js", "//= require ./#{application_name}/index"
         gsub_file "#{angular_path}/application.js", '//= require_tree .', '//= require_self'
       end
 
       def inject_layout
         if template_extension == 'erb'
-          inject_into_file("app/views/layouts/application.html.erb", after: '<%= javascript_include_tag "application", "data-turbolinks-track" => true %>\n') do
+          inject_into_file("app/views/layouts/application.html.erb", after: '<%= javascript_include_tag "application", "data-turbolinks-track" => true %>\\n') do
             "<%= javascript_include_tag '#{application_name}' %>"
           end
         elsif template_extension == 'haml'
-          inject_into_file("app/views/layouts/application.html.haml", after: '= javascript_include_tag "application", "data-turbolinks-track" => true\n') do
+          inject_into_file("app/views/layouts/application.html.haml", after: '= javascript_include_tag "application", "data-turbolinks-track" => true\\n') do
             "= javascript_include_tag '#{application_name}'"
           end
         end
