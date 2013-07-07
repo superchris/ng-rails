@@ -74,6 +74,12 @@ module Ng
         end
       end
 
+      def templates_asset_path
+        inject_into_file("config/application.rb", before: "  end\nend") do
+          "    config.assets.paths << Rails.root.join('app', 'assets', 'templates')\n"
+        end
+      end
+
       private
 
       def inject_angular_cdn
