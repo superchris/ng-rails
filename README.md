@@ -1,6 +1,6 @@
-# ng-rails [![Build Status](https://travis-ci.org/janders223/ng-rails.png)](https://travis-ci.org/janders223/ng-rails) [![Dependency Status](https://gemnasium.com/janders223/ng-rails.png)](https://gemnasium.com/janders223/ng-rails) [![Code Climate](https://codeclimate.com/github/janders223/ng-rails.png)](https://codeclimate.com/github/janders223/ng-rails)
+'# ng-rails [![Build Status](https://travis-ci.org/janders223/ng-rails.png)](https://travis-ci.org/janders223/ng-rails) [![Dependency Status](https://gemnasium.com/janders223/ng-rails.png)](https://gemnasium.com/janders223/ng-rails) [![Code Climate](https://codeclimate.com/github/janders223/ng-rails.png)](https://codeclimate.com/github/janders223/ng-rails)
 
-ng-rails allows you to easily include [AngularJS](http://angularjs.org/) in your Rails 4+ project.
+ng-rails allows you to easily include [AngularJS](http://angularjs.org/) in your Rails 3.1+ project.
 
 ng-rails aims to provide generators with a sane default configuration for getting an AngularJS app up and running easily.
 

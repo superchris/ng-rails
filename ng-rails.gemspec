@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.files = %w(README.md MIT-LICENSE) + Dir["lib/**/*"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.0.0"
+  s.add_dependency("rails", ">= 3.1.12",  "< 5")
 
   s.add_development_dependency "appraisal"
 end
