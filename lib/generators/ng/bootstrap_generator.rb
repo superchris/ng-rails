@@ -74,6 +74,18 @@ module Ng
         end
       end
 
+      def templates_asset_path
+        inject_into_file("config/application.rb", before: "  end\nend") do
+          "    config.assets.paths << Rails.root.join('app', 'assets', 'templates')\n"
+        end
+      end
+
+      def compile_js_file
+        inject_into_file("config/environments/production.rb", before: "  config.cache_classes = true") do
+          "  config.assets.precompile += %w( #{application_name}.js )\n"
+        end
+      end
+
       private
 
       def inject_angular_cdn
