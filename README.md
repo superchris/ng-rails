@@ -1,6 +1,4 @@
-# ng-rails [![Build Status](https://travis-ci.org/janders223/ng-rails.png)](https://travis-ci.org/janders223/ng-rails) [![Dependency Status](https://gemnasium.com/janders223/ng-rails.png)](https://gemnasium.com/janders223/ng-rails)
-
-#### Current Release Version [![Gem Version](https://badge.fury.io/rb/ng-rails.png)](http://badge.fury.io/rb/ng-rails)
+# ng-rails [![Build Status](https://travis-ci.org/janders223/ng-rails.png)](https://travis-ci.org/janders223/ng-rails) [![Dependency Status](https://gemnasium.com/janders223/ng-rails.png)](https://gemnasium.com/janders223/ng-rails) [![Gem Version](https://badge.fury.io/rb/ng-rails.png)](http://badge.fury.io/rb/ng-rails)
 
 ng-rails allows you to easily include [AngularJS](http://angularjs.org/) in your Rails 3.1+ project.
 
