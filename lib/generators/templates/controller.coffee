@@ -6,6 +6,5 @@
 # http://docs.angularjs.org/tutorial/step_05
 
 <%= application_name.camelize %>.controller '<%= file_name %>Ctrl', ['$scope', ($scope) ->
-  # Don't forget to set the scope
-  # $scope.entries = Entry.query()
+  # Your code goes here...
 ]

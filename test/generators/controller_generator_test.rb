@@ -20,7 +20,6 @@ class ControllerGeneratorTest < Rails::Generators::TestCase
     super
 
     copy_directory "app/assets/javascripts"
-    copy_directory "app/views/layouts/application.html.erb"
     copy_directory "config"
   end
 
