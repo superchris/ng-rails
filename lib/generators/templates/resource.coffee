@@ -5,7 +5,7 @@
 
 <%= application_name.camelize %>.factory "<%= file_name.camelize %>", ['$resource', ($resource) ->
   $resource(
-    "/<%= file_name.pluralize.underscore %>/:id",
+    url: "/<%= file_name.pluralize.underscore %>/:id",
     { id: "@id" },
     { 
       'create': { method: 'POST' }, 

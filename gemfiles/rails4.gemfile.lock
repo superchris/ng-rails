@@ -1,7 +1,7 @@
 PATH
   remote: /Users/janders/Copy/workspace/ng-rails
   specs:
-    ng-rails (0.0.22)
+    ng-rails (0.0.23)
       rails (>= 3.1.12, < 5)
 
 GEM
